@@ -1,158 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RAON SERVER | OPENING SOON</title>
-
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, "Malgun Gothic", sans-serif;
-      color: #ffffff;
-      background: #080b16;
-    }
-
-    .hero {
-      min-height: 100vh;
-      padding: 28px 8%;
-      display: flex;
-      flex-direction: column;
-      background:
-        radial-gradient(circle at 15% 20%, rgba(112, 86, 255, .42), transparent 32%),
-        radial-gradient(circle at 85% 80%, rgba(51, 192, 255, .22), transparent 30%),
-        #080b16;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: 900;
-      letter-spacing: 2px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 22px;
-    }
-
-    .menu a {
-      color: #c8c9d3;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .main {
-      flex: 1;
-      max-width: 800px;
-      margin: auto 0;
-      padding: 90px 0;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 9px 14px;
-      border: 1px solid rgba(255,255,255,.25);
-      border-radius: 30px;
-      color: #d9ccff;
-      font-size: 13px;
-      letter-spacing: 1px;
-    }
-
-    h1 {
-      margin: 22px 0 18px;
-      font-size: clamp(42px, 7vw, 86px);
-      line-height: 1.08;
-      letter-spacing: -3px;
-    }
-
-    h1 span {
-      color: #ad92ff;
-    }
-
-    .text {
-      color: #b9bac7;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 12px;
-      margin-top: 34px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      padding: 15px 22px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .primary {
-      color: #12101c;
-      background: #b79cff;
-    }
-
-    .secondary {
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,.3);
-    }
-
-    .status {
-      color: #8ee6b8;
-      font-size: 14px;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 600px) {
-      .menu { display: none; }
-      .hero { padding: 24px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#120c09">
+<title>2026 RAON ROLEPLAY | THE CITY RETURNS</title>
+<meta name="description" content="더 새롭고 더 단단하게 돌아온 2026 RAON ROLEPLAY. 8월 말 GRAND OPEN.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap');
+:root{--cream:#f9e9d5;--sand:#d5ad86;--gold:#ffb767;--red:#ff594e;--brown:#4e2b20;--dark:#0b0a0a;--panel:#17100d;--line:rgba(255,211,170,.18)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0a0807;color:#fff;font-family:"Noto Sans KR",sans-serif;overflow-x:hidden}a{color:inherit}.shell{width:min(1200px,calc(100% - 44px));margin:auto}
+#intro{position:fixed;inset:0;z-index:1000;background:#090605;display:grid;place-items:center;transition:opacity .9s,visibility .9s}#intro.hide{opacity:0;visibility:hidden}.intro-grid{position:absolute;inset:0;background:linear-gradient(rgba(255,130,73,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,130,73,.06) 1px,transparent 1px);background-size:54px 54px;perspective:500px;transform:scale(1.3) rotateX(55deg);transform-origin:center bottom}.intro-glow{position:absolute;width:600px;height:600px;border-radius:50%;background:#ff5b2f;filter:blur(170px);opacity:.16}.intro-copy{text-align:center;position:relative}.seal{width:96px;height:96px;margin:0 auto 24px;border:1px solid #ffb06b;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 45px #ff703844,inset 0 0 28px #ff703822}.seal b{font:700 47px Oswald;color:#ffe1bd}.intro-copy small{letter-spacing:7px;color:#dca474}.intro-copy h2{margin:12px 0 5px;font:700 clamp(60px,12vw,130px)/.9 Oswald;letter-spacing:4px;text-shadow:0 0 50px #ff794d44}.intro-copy p{color:#ceb09a}.load{width:280px;height:2px;background:#493025;margin:30px auto;overflow:hidden}.load i{display:block;height:100%;background:linear-gradient(90deg,#ff584c,#ffd292);animation:load 3.1s linear forwards}@keyframes load{from{width:0}to{width:100%}}#intro button{border:0;background:none;color:#967767;letter-spacing:3px;cursor:pointer}
+.hero{min-height:100vh;position:relative;isolation:isolate;background:linear-gradient(90deg,rgba(9,7,6,.95) 0%,rgba(9,7,6,.69) 43%,rgba(9,7,6,.12) 75%),linear-gradient(0deg,#0a0807 0%,transparent 28%),url("https://raon-server-promo.dxytdfwn28.chatgpt.site/images/raon-aaa-hero.png") center/cover no-repeat;overflow:hidden}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 73% 42%,transparent 0 22%,rgba(0,0,0,.25) 65%),linear-gradient(125deg,transparent 55%,rgba(255,143,85,.25));z-index:-1}.scan{position:absolute;inset:-50%;background:linear-gradient(105deg,transparent 45%,rgba(255,255,255,.09) 50%,transparent 55%);animation:scan 7s infinite}@keyframes scan{from{transform:translateX(-35%)}to{transform:translateX(35%)}}
+nav{height:98px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.13);position:relative;z-index:5}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand-mark{width:43px;height:43px;border:1px solid #e2a56d;border-radius:50%;display:grid;place-items:center;font:700 24px Oswald;color:#ffc783}.brand b{font:700 23px Oswald;letter-spacing:3px}.brand small{display:block;font-size:8px;color:#a99991;letter-spacing:2px}.navlinks{display:flex;gap:34px}.navlinks a{text-decoration:none;font-size:13px;color:#e3d7cf}.discord-mini,.discord-main,.final a{background:linear-gradient(135deg,#ffcf98,#ff7356);color:#20100b;text-decoration:none;font-weight:900;border-radius:6px;box-shadow:0 12px 40px #ff624d3b}.discord-mini{padding:12px 18px;font-size:12px}
+.hero-copy{padding-top:13vh;position:relative}.over{font:600 12px Oswald;color:#ff9f76;letter-spacing:5px}.over:before{content:"";display:inline-block;width:48px;height:1px;background:#ff7356;vertical-align:middle;margin-right:13px}.hero h1{margin:22px 0 10px;font:700 clamp(76px,11vw,154px)/.74 Oswald;letter-spacing:-4px}.hero h1 span{display:block;font:700 clamp(18px,2.3vw,31px)/1 "Noto Sans KR";letter-spacing:-1px;color:#f5dfcd;margin-bottom:24px}.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1px #f3bea2;font-size:.37em;letter-spacing:9px}.hero-lead{font-size:22px;font-weight:700;margin:30px 0 9px}.hero-text{color:#cbbcb4;line-height:1.8}.hero-buttons{display:flex;gap:12px;margin-top:34px}.hero-buttons a{padding:17px 24px;text-decoration:none;border-radius:6px;font-weight:800}.hero-buttons .secondary{border:1px solid rgba(255,255,255,.28);background:rgba(10,7,6,.4);backdrop-filter:blur(12px)}.open-card{position:absolute;right:4%;bottom:9%;padding:20px 26px;border:1px solid rgba(255,193,142,.4);background:rgba(31,17,12,.53);backdrop-filter:blur(15px);transform:perspective(500px) rotateY(-7deg);box-shadow:0 30px 80px #0008}.open-card small{display:block;color:#d1a88b;letter-spacing:4px;font:600 10px Oswald}.open-card b{font-size:34px;color:#ffd1aa}.open-card span{display:block;font:600 11px Oswald;letter-spacing:3px;color:#ff7b64}
+.section{padding:115px 0}.kicker{color:#d98660;font:600 12px Oswald;letter-spacing:5px}.title{font-size:clamp(37px,5vw,68px);line-height:1.15;margin:12px 0 45px}.title em{font-style:normal;color:#e99b72}.welcome{background:linear-gradient(180deg,#0a0807,#160d09)}.welcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:85px;align-items:center}.welcome-copy p{font-size:18px;line-height:2;color:#c9b7aa}.welcome-copy strong{display:block;margin-top:25px;color:#f2c6a6;font-size:21px;line-height:1.6}.content-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px;margin-top:55px}.content-card{min-height:165px;padding:22px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.01));border-radius:12px;transform-style:preserve-3d;transition:.3s}.content-card:hover{transform:translateY(-8px) perspective(500px) rotateX(3deg);border-color:#d78d63}.content-card i{font-style:normal;font-size:26px}.content-card b{display:block;margin:30px 0 8px}.content-card small{color:#9f8c80}
+.factions{background:linear-gradient(rgba(9,6,5,.65),rgba(9,6,5,.9)),url("https://raon-server-promo.dxytdfwn28.chatgpt.site/images/raon-faction-cinematic.png") center/cover fixed}.faction-wrap{background:rgba(13,9,8,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,214,180,.17);border-radius:22px;padding:44px}.category{padding:32px 0;border-bottom:1px solid var(--line)}.category:last-child{border:0}.category-head{display:flex;justify-content:space-between;gap:25px;align-items:end}.number{font:700 13px Oswald;color:#ff7b63;letter-spacing:3px}.category h3{font-size:32px;margin:8px 0}.rule{color:#bda99b;text-align:right;font-size:13px;line-height:1.8}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:23px}.card{padding:24px;background:linear-gradient(145deg,rgba(115,76,56,.34),rgba(32,20,16,.67));border:1px solid var(--line);border-radius:12px;display:flex;justify-content:space-between;gap:20px}.card h4{font-size:20px;margin:0 0 6px}.card p{margin:0;color:#bba89d;font-size:14px}.status{color:#78eba5;font-size:12px;white-space:nowrap}.status:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#62ef98;box-shadow:0 0 12px #62ef98;margin-right:6px}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tags span{padding:10px 15px;border:1px solid rgba(255,166,126,.28);background:#2a1711;border-radius:30px;font-size:13px;color:#edbaa0}
+.staff{background:#f4dfca;color:#4b2b20}.staff .kicker{color:#bc624e}.staff-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.staff-card{padding:36px;background:#fff8f0;border:1px solid #dfb998;border-radius:16px;display:flex;align-items:center;gap:22px;box-shadow:0 18px 50px #6f3d1d19}.staff-card i{font-style:normal;font-size:36px}.staff-card h3{margin:0 0 7px;font-size:23px}.staff-card p{margin:0;color:#8c6b5d}.staff-card .status{margin-left:auto;color:#b74b3f}.staff-card .status:before{background:#d65e4f;box-shadow:none}
+.final{padding:125px 20px;text-align:center;background:radial-gradient(circle at 50% 30%,#51241c 0,transparent 42%),#0b0807}.final p{letter-spacing:5px;color:#d5926d;font:600 12px Oswald}.final h2{font-size:clamp(44px,6vw,78px);line-height:1.2;margin:18px 0 42px}.final h2 em{font-style:normal;color:#f7b27e}.final a{display:inline-block;padding:19px 31px}footer{padding:28px 0;border-top:1px solid var(--line);color:#876f64;font-size:12px}footer .shell{display:flex;justify-content:space-between}
+@media(max-width:820px){.navlinks{display:none}.hero{background-position:62% center}.hero-copy{padding-top:14vh}.hero h1{font-size:78px}.open-card{display:none}.welcome-grid{grid-template-columns:1fr;gap:20px}.content-grid{grid-template-columns:1fr 1fr}.category-head{display:block}.rule{text-align:left}.cards,.staff-grid{grid-template-columns:1fr}.faction-wrap{padding:23px}.section{padding:82px 0}}@media(max-width:480px){.shell{width:calc(100% - 30px)}nav{height:78px}.discord-mini{padding:10px}.brand small{display:none}.hero h1{font-size:64px}.hero h1 em{letter-spacing:5px}.hero-buttons{flex-direction:column;width:max-content}.content-grid{grid-template-columns:1fr}.card{display:block}.status{display:block;margin-top:13px}footer .shell{display:block;text-align:center}footer span{display:block;margin-top:8px}}
+</style>
 </head>
-
 <body>
-  <section class="hero">
-    <nav>
-      <div class="logo">RAON SERVER</div>
-
-      <div class="menu">
-        <a href="#intro">소개</a>
-        <a href="#notice">소식</a>
-        <a href="#guide">가이드</a>
-      </div>
-    </nav>
-
-    <main class="main">
-      <div class="badge">OPENING SOON</div>
-
-      <h1>
-        새롭게 리뉴얼된<br>
-        <span>RAON SERVER</span>
-      </h1>
-
-      <p class="text">
-        더 단단하게 준비했습니다.<br>
-        당신의 선택으로 이야기를 만들어 가는 도시,
-        라온의 새로운 시작을 함께해 주세요.
-      </p>
-
-      <div class="buttons">
-        <a class="button primary" href="#">디스코드 입장하기</a>
-        <a class="button secondary" href="#">스태프 지원하기</a>
-      </div>
-    </main>
-
-    <div class="status">● RAON SERVER · 오픈 준비중</div>
-  </section>
+<div id="intro"><div class="intro-grid"></div><div class="intro-glow"></div><div class="intro-copy"><div class="seal"><b>R</b></div><small>2026 · THE CITY RETURNS</small><h2>RAON</h2><p>완벽한 모습으로 찾아뵙겠습니다.</p><div class="load"><i></i></div><button onclick="closeIntro()">SKIP →</button></div></div>
+<header class="hero" id="home"><div class="scan"></div><nav class="shell"><a class="brand" href="#home"><span class="brand-mark">R</span><span><b>RAON</b><small>ROLEPLAY SERVER</small></span></a><div class="navlinks"><a href="#content">콘텐츠</a><a href="#factions">팩션 모집</a><a href="#staff">관리직 모집</a></div><a class="discord-mini" href="https://discord.gg/MpJJX9qGv" target="_blank" rel="noopener">DISCORD ↗</a></nav><div class="hero-copy shell"><p class="over">THE CITY RETURNS · 2026</p><h1><span>완벽한 모습으로 돌아온</span>RAON<br><em>ROLEPLAY</em></h1><p class="hero-lead">도시가 다시 숨을 쉽니다.</p><p class="hero-text">부족했던 부분은 채우고, 새로운 경험은 더했습니다.<br>다시 시작하는 라온의 첫 번째 시민이 되어주세요.</p><div class="hero-buttons"><a class="discord-main" href="https://discord.gg/MpJJX9qGv" target="_blank" rel="noopener">디스코드 입장하기 ↗</a><a class="secondary" href="#factions">팩션 모집 보기</a></div></div><div class="open-card"><small>GRAND OPEN</small><b>8월 말</b><span>COMING SOON</span></div></header>
+<section class="welcome section" id="content"><div class="shell"><div class="welcome-grid"><div><p class="kicker">WELCOME BACK TO RAON</p><h2 class="title">더 새롭게,<br><em>더 단단하게.</em></h2></div><div class="welcome-copy"><p>잠시 재정비의 시간을 마친 라온서버가 기존보다 더욱 새로워진 모습으로 돌아옵니다. 기존의 라온을 바탕으로 부족했던 부분은 보완하고, 새로운 콘텐츠와 시스템을 더해 더 단단하고 완성도 높은 도시를 준비했습니다.</p><strong>새롭게 리뉴얼된 라온에서<br>또 다른 이야기를 함께 시작해 주세요.</strong></div></div><div class="content-grid"><div class="content-card"><i>🏙️</i><b>시민 생활</b><small>다양한 직업과 경제 활동</small></div><div class="content-card"><i>🛡️</i><b>남부 · 북부 치안</b><small>구역별 치안 콘텐츠</small></div><div class="content-card"><i>🏛️</i><b>팩션 RP</b><small>공무원 · 기업 · 조직</small></div><div class="content-card"><i>📈</i><b>도시 성장</b><small>팩션원과 함께 성장</small></div><div class="content-card"><i>💬</i><b>소통 운영</b><small>유저 의견 적극 반영</small></div></div></div></section>
+<section class="factions section" id="factions"><div class="shell faction-wrap"><p class="kicker">NOW RECRUITING</p><h2 class="title">새로운 도시의<br><em>주인공을 모집합니다.</em></h2><div class="category"><div class="category-head"><div><span class="number">01 · PUBLIC SERVICE</span><h3>공무원 팩션</h3></div><p class="rule">팩션장 / 부팩션장 20세 이상<br>정식 20명 · 임시 15명 이상</p></div><div class="cards"><div class="card"><div><h4>경찰청</h4><p>남부 치안관리</p></div><span class="status">모집중</span></div><div class="card"><div><h4>보안국</h4><p>북부 치안관리</p></div><span class="status">모집중</span></div></div></div><div class="category"><div class="category-head"><div><span class="number">02 · ENTERPRISE</span><h3>기업 팩션</h3></div><p class="rule">팩션장 / 부팩션장 20세 이상<br>정식 15명 · 임시 10명 이상</p></div><div class="cards"><div class="card"><div><h4>기업 1</h4><p>총기 파츠 · 방탄복 판매</p></div><span class="status">모집중</span></div><div class="card"><div><h4>기업 2</h4><p>진통제 · 스테로이드 · 라온500 판매</p></div><span class="status">모집중</span></div><div class="card"><div><h4>정비소</h4><p>세차 · 광택 · 수리 · 견인</p></div><span class="status">모집중</span></div></div></div><div class="category"><div class="category-head"><div><span class="number">03 · ORGANIZATION</span><h3>조직 팩션</h3></div><p class="rule">팩션장 / 부팩션장 20세 이상<br>정식 15명 · 임시 10명 이상</p></div><div class="cards"><div class="card"><div><h4>조직 1 · 2 · 3 · 4</h4><p>사업권 통합 운영</p><div class="tags"><span>마약 유통</span><span>총기 판매</span><span>검은돈 환전</span></div></div><span class="status">모집중</span></div></div></div></div></section>
+<section class="staff section" id="staff"><div class="shell"><p class="kicker">MANAGEMENT TEAM</p><h2 class="title">도시를 함께 운영할<br>관리진을 모집합니다.</h2><div class="staff-grid"><div class="staff-card"><i>🌙</i><div><h3>스태프</h3><p>18세 이상 · 경력자 우대 · 겸직 불가</p></div><span class="status">모집중</span></div><div class="staff-card"><i>🐣</i><div><h3>뉴비도우미</h3><p>17세 이상 · 경력자 우대 · 겸직 가능</p></div><span class="status">모집중</span></div></div></div></section>
+<section class="final"><p>2026 RAON ROLEPLAY</p><h2>8월 말,<br><em>새로운 도시가 열립니다.</em></h2><a href="https://discord.gg/MpJJX9qGv" target="_blank" rel="noopener">RAON 디스코드 입장하기 ↗</a></section>
+<footer><div class="shell"><b>RAON SERVER</b><span>© 2026 RAON ROLEPLAY. ALL RIGHTS RESERVED.</span></div></footer>
+<script>function closeIntro(){document.getElementById("intro").classList.add("hide")}setTimeout(closeIntro,3300);document.addEventListener("pointermove",e=>{document.documentElement.style.setProperty("--x",e.clientX/window.innerWidth)})</script>
 </body>
 </html>
